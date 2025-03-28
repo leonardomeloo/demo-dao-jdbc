@@ -1,6 +1,7 @@
 package model.entities;
 
 import java.io.Serializable;
+import java.sql.Date;
 import java.time.LocalDate;
 
 public class Seller implements Serializable{
@@ -13,6 +14,9 @@ public class Seller implements Serializable{
     private LocalDate birthDate;
     private Double baseSalary;
 
+    public Seller() {
+    }
+    
     private Department department;
     public Seller(Integer id, String name, String email, LocalDate birthDate, Double baseSalary, Department department) {
       this.id = id;
