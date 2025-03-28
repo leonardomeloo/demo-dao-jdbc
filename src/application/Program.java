@@ -2,6 +2,7 @@ package application;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
 
 import model.dao.DaoFactory;
 import model.dao.SellerDao;
@@ -26,5 +27,12 @@ public class Program {
         Seller seller2 = sellerDao.findByID(3);
         System.out.println(seller2);
 
+        System.out.println("=== TESTE 2: SELLER findByDepartment ===");
+        Department department = new Department(2, null);
+        List<Seller> list = sellerDao.findByDepartment(department);
+
+        for(Seller obj2 : list){
+            System.out.println(obj2);
+        }
     }
 }
