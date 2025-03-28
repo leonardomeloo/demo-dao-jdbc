@@ -2,6 +2,7 @@ package application;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Date;
 import java.util.List;
 
 import model.dao.DaoFactory;
@@ -41,5 +42,11 @@ public class Program {
         for(Seller all : list2){
             System.out.println(all);
         }
+
+        System.out.println("=== TESTE 4: SELLER Insert ===");
+        Seller newSeller = new Seller(null, "Greg", "greg@gmail.com", birthDate, 4000.00, department);
+        sellerDao.insert(newSeller);
+
+        System.out.println("Insert! New id = " + newSeller.getId());
     }
 }
