@@ -21,9 +21,10 @@ public class Program {
         System.out.println(obj);
 
         SellerDao sellerDao = DaoFactory.creatSellerDao();
+        System.out.println(seller);
+        System.out.println("=== TESTE 1: SELLER findById ===");
         Seller seller2 = sellerDao.findByID(3);
         System.out.println(seller2);
 
-        System.out.println(seller);
     }
 }
