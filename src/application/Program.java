@@ -49,11 +49,15 @@ public class Program {
 
         // System.out.println("Insert! New id = " + newSeller.getId());
 
-        System.out.println("=== TESTE 5: SELLER Update ===");
-        seller = sellerDao.findByID(9);
-        seller.setName("Diego");
-        sellerDao.update(seller);
-        System.out.println("UPDATE Complet");
+        // System.out.println("=== TESTE 5: SELLER Update ===");
+        // seller = sellerDao.findByID(9);
+        // seller.setName("Diego");
+        // sellerDao.update(seller);
+        // System.out.println("UPDATE Complet");
+
+        System.out.println("=== TESTE 6: SELLER Delete ===");
         
+        sellerDao.deleteByID(8);
+        System.out.println("Delete Complet");
     }
 }
