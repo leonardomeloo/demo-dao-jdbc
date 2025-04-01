@@ -17,7 +17,10 @@ public class Program2 {
   
   dep = departmentDao.findByID(8);
   dep.setName("Contrução");
-  departmentDao.update(dep);
-  System.out.println("UPDATE COMPLET");
+  // departmentDao.update(dep);
+  // System.out.println("UPDATE COMPLETE");
+
+  departmentDao.deleteByID(6);
+  System.out.println("Delete Complete.");
 }
 }
